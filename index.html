@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,"><meta name="theme-color" content="#191916">
+  <meta name="description" content="石上观三维造像展览，旋转六件由各自照片建模的造像，观察龛位、纹理与姿态。">
+  <title>石上观 · 三维造像展</title>
+  <link rel="stylesheet" href="exhibition.css">
+  <script type="module" src="assets/vendor/model-viewer-4.4.0.min.js"></script>
+  <script defer src="exhibition.js"></script>
+</head>
+<body>
+<header><a class="brand" href="#s1">石上观</a><nav aria-label="展览章节">
+  <a href="#s1" aria-current="location">首页</a>
+  <a href="#s2">整体</a>
+  <a href="#s3">结构</a>
+  <a href="#s4">细节</a>
+  <a href="#s5">价值</a>
+  <a href="#s6">收尾</a>
+</nav></header>
+<main>
+<section id="s1" class="exhibit opening" aria-labelledby="title1" data-yaw="-13" data-focus="0.063m 2.160m -0.039m">
+  <div class="exhibit-copy">
+    <h1 id="title1" class="hero-title"><span>一眼，</span><span>入石境</span></h1>
+    <p>从火焰纹开始，走近六件造像的形、色与肌理。</p>
+    <a class="action" href="#s2">进入探索 <span aria-hidden="true">↓</span></a>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/1.jpg" alt="火焰背饰前的彩塑" >
+      <model-viewer src="models/1.glb" alt="火焰背饰前的彩塑的可旋转三维模型" loading="eager"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="-13deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="火焰环身的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/1.glb" download="01-火焰环身.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  
+<a class="chapter-bridge" href="#s2"><span class="bridge-thread" aria-hidden="true"></span><span class="bridge-words"><small>从轮廓，走向整体</small><strong>大小之间</strong></span><img src="assets/2.jpg" alt="" loading="lazy"><span class="bridge-arrow" aria-hidden="true">↘</span></a></section>
+<section id="s2" class="exhibit reverse" aria-labelledby="title2" data-yaw="14" data-focus="-0.628m 1.185m 0.078m">
+  <div class="exhibit-copy">
+    <h2 id="title2">大小之间</h2>
+    <p>身旁的小立像，让坐像的体量更容易看清。</p>
+    <button type="button" class="action detail-action">细看小立像 <span aria-hidden="true">↗</span></button>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/2.jpg" alt="抬掌坐像及身旁的小立像" loading="lazy">
+      <model-viewer src="models/2.glb" alt="抬掌坐像及身旁的小立像的可旋转三维模型" loading="lazy"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="14deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="大小之间的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/2.glb" download="02-大小之间.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  
+<a class="chapter-bridge" href="#s3"><span class="bridge-thread" aria-hidden="true"></span><span class="bridge-words"><small>从整体，读出秩序</small><strong>层层入龛</strong></span><img src="assets/3.jpg" alt="" loading="lazy"><span class="bridge-arrow" aria-hidden="true">↘</span></a></section>
+<section id="s3" class="exhibit wide" aria-labelledby="title3" data-yaw="-19" data-focus="0.174m 0.960m 0.091m">
+  <div class="exhibit-copy">
+    <h2 id="title3">层层入龛</h2>
+    <p>横向成列，向上叠置。沿龛缘观察每一层。</p>
+    <button type="button" class="action detail-action">放大中层龛口 <span aria-hidden="true">↗</span></button>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/3.jpg" alt="层叠排列的小佛龛" loading="lazy">
+      <model-viewer src="models/3.glb" alt="层叠排列的小佛龛的可旋转三维模型" loading="lazy"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="-19deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="层层入龛的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/3.glb" download="03-层层入龛.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  
+<a class="chapter-bridge" href="#s4"><span class="bridge-thread" aria-hidden="true"></span><span class="bridge-words"><small>从龛位，走近石面</small><strong>石面留痕</strong></span><img src="assets/4.jpg" alt="" loading="lazy"><span class="bridge-arrow" aria-hidden="true">↘</span></a></section>
+<section id="s4" class="exhibit reverse" aria-labelledby="title4" data-yaw="12" data-focus="-0.039m 1.040m 0.357m">
+  <div class="exhibit-copy">
+    <h2 id="title4">石面留痕</h2>
+    <p>侧光落在胸前，凹点与裂纹显出深浅。</p>
+    <button type="button" class="action detail-action">放大胸前石面 <span aria-hidden="true">↗</span></button>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/4.jpg" alt="表面风化的石雕大像" loading="lazy">
+      <model-viewer src="models/4.glb" alt="表面风化的石雕大像的可旋转三维模型" loading="lazy"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="12deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="石面留痕的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/4.glb" download="04-石面留痕.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  
+<a class="chapter-bridge" href="#s5"><span class="bridge-thread" aria-hidden="true"></span><span class="bridge-words"><small>从肌理，看见色彩</small><strong>色彩留在石上</strong></span><img src="assets/5.jpg" alt="" loading="lazy"><span class="bridge-arrow" aria-hidden="true">↘</span></a></section>
+<section id="s5" class="exhibit wide" aria-labelledby="title5" data-yaw="-12" data-focus="0.012m 1.757m 0.421m">
+  <div class="exhibit-copy">
+    <h2 id="title5">色彩留在石上</h2>
+    <p>金色面部与暗色衣纹，在光里形成对照。</p>
+    <button type="button" class="action detail-action">细看面部 <span aria-hidden="true">↗</span></button>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/5.jpg" alt="金色面部与暗色衣纹的坐像" loading="lazy">
+      <model-viewer src="models/5.glb" alt="金色面部与暗色衣纹的坐像的可旋转三维模型" loading="lazy"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="-12deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="色彩留在石上的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/5.glb" download="05-色彩留在石上.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  
+<a class="chapter-bridge" href="#s6"><span class="bridge-thread" aria-hidden="true"></span><span class="bridge-words"><small>从色彩，回望姿态</small><strong>目光停在这里</strong></span><img src="assets/6.jpg" alt="" loading="lazy"><span class="bridge-arrow" aria-hidden="true">↘</span></a></section>
+<section id="s6" class="exhibit closing" aria-labelledby="title6" data-yaw="15" data-focus="-0.186m 1.387m 0.280m">
+  <div class="exhibit-copy">
+    <h2 id="title6">目光停在这里</h2>
+    <p>从冠饰到指尖，再看一次造像的姿态。</p>
+    <a class="action" href="#s1">回到首页 <span aria-hidden="true">↑</span></a>
+  </div>
+  <figure class="stage" data-view="color">
+    <div class="frame">
+      <img class="original" src="assets/6.jpg" alt="手靠近面颊的戴冠造像" loading="lazy">
+      <model-viewer src="models/6.glb" alt="手靠近面颊的戴冠造像的可旋转三维模型" loading="lazy"
+        camera-controls disable-pan touch-action="pan-y" interaction-prompt="none"
+        camera-orbit="15deg 84deg 87%" min-camera-orbit="auto 28deg 38%" max-camera-orbit="auto 138deg 190%"
+        field-of-view="32deg" min-field-of-view="19deg" max-field-of-view="45deg"
+        shadow-intensity="0.72" shadow-softness="0.88" environment-image="neutral" exposure="1.10">
+      </model-viewer>
+    </div>
+    <figcaption class="stage-tools">
+      <div class="view-modes" role="group" aria-label="目光停在这里的显示方式">
+        <button type="button" data-mode="color" aria-pressed="true">彩色模型</button>
+        <button type="button" data-mode="clay" aria-pressed="false">素模</button>
+        <button type="button" data-mode="photo" aria-pressed="false">原照</button>
+      </div>
+      <div class="stage-links"><button type="button" class="reset">复位</button>
+        <a href="models/6.glb" download="06-目光停在这里.glb">下载模型</a></div>
+    </figcaption>
+    <p class="stage-hint" role="status" aria-live="polite">正在载入模型…</p>
+  </figure>
+  <footer>石上观 · 造像观察手记 <small>造型深度据单张照片估算，未拍摄的背面以素色封合。</small></footer>
+</section>
+</main>
+</body>
+</html>
+
